@@ -1,0 +1,124 @@
+/* Dashboard Container */
+.main_dash {
+    margin-left: 250px;  /* Offset for sidebar */
+    padding: 20px;
+    background-color: #F5F6FA;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+.dashboard  .dashboard-box {
+    width: 255px;
+    height: 161px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+.dashboard h3{
+    font-size: 16px;
+}
+.dashboard .dashboard-content {
+      display: flex;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .dashboard .status{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .dashboard .User_icon {
+    display: flex;  /* Enables flexbox layout */
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;  /* Centers content vertically */
+    margin-left: 90px;
+    width: 60px;
+    height: 60px;
+    border-radius: 23px;
+    background: #d0d0ee;
+  }
+
+  .dashboard svg{
+    font-size: 2.5em;
+    color: #3D42DF;
+  }
+
+  .dashboard .uic1 svg{
+    color: #FEC53D;
+  }
+
+  .dashboard .uic1{
+    background-color: #f8dd9f;
+  }
+
+  .dashboard .uic2 svg{
+    color: #4AD991;
+    ;
+  }
+
+  .dashboard .uic2{
+    background-color: #97e7bf;
+  }
+  .dashboard .uic3 svg{
+    color: #FF9066;
+  }
+
+  .dashboard .uic3{
+    background-color: #ebc1b3;
+  }
+  
+  .dashboard  .user-logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .dashboard .user-stats {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .dashboard .user-count {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .dashboard .user-trend {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .dashboard .increase {
+    color: green;
+  }
+  
+  .dashboard .decrease {
+    color: red;
+  }
+  
+  .dashboard .percentage-change {
+    margin-left: 5px;
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .Graph .grapg_pattern{
+    height: 444px;
+    width: 1050px;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 54px 0px #0000000D;
+  }
+
+  .Graph img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+  }
