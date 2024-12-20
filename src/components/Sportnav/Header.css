@@ -1,0 +1,75 @@
+.containerhead{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.containerhead svg{
+    font-size: 2em;
+}
+
+.containerhead .logo{
+    flex-wrap: wrap;
+    align-content: center;
+}
+.containerhead p{
+    margin: 0;
+}
+.containerhead .logoname {
+    display: flex; /* Makes it a flex container */
+    flex-direction: row; /* Horizontal layout (default) */
+    justify-content: center; /* Horizontally centers the child items */
+    align-items: center; /* Vertically centers the child items */
+    padding: 10px; /* Adds spacing inside the container */
+}
+
+.containerhead .lname{
+    color: rgb(26, 190, 26);
+    font-weight: bolder;
+    font-size: large;
+}
+.containerhead .mmenu{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.containerhead .menubtn{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.containerhead .menu .head{
+    font-size: small;
+    font-weight: 500;
+    color: black;
+}
+
+.containerhead .menu:hover{
+    text-decoration: underline rgb(26, 190, 26) 2px;
+}
+.containerhead .btn{
+    align-content: center;
+}
+
+.containerhead .btn button{
+    height: 40px;
+    width: 130px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: rgb(26, 190, 26);
+}
+
+.containermain .greenline{
+    background-color: rgb(26, 190, 26);
+    border: 2px solid rgb(26, 190, 26);
+    height: 8px;
+}

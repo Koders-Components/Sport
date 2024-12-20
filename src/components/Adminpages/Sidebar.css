@@ -1,0 +1,66 @@
+/* Sidebar Container */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: #FFFFFF;
+  position: fixed;
+  overflow-y: auto; /* Enable vertical scrolling */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Sidebar Collapsed */
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+/* Toggle Button */
+.sidebar-toggle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+/* Sidebar Menu Items */
+.sidebar-menu li {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-menu li a:hover {
+  color: white;
+  background-color: #4880FF;
+  border-radius: 6px;
+}
+
+/* Divider */
+.Mid_line {
+  border: 0.6px solid #E0E0E0;
+  margin: 10px 0;
+}
+
+/* Icon Styling */
+.sidebar-menu li svg {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .sidebar.closed {
+    transform: none;
+  }
+
+  .sidebar-toggle {
+    display: none; /* Hide toggle button on larger screens */
+  }
+}

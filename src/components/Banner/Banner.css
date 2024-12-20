@@ -1,0 +1,97 @@
+    .app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .app .header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .app .main-content {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .app .products, .cart {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .app .product {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .app .product h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .app .product p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .app .product button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .app .product button:hover {
+    background-color: #45a049;
+  }
+  
+  .app .product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .app .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .app .cart-item button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .app .cart-item button:hover {
+    background-color: #e53935;
+  }
+  
+  .app .cart h3 {
+    margin-top: 20px;
+    text-align: right;
+    color: #333;
+  }
+  

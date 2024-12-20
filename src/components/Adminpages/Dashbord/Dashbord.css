@@ -1,0 +1,97 @@
+/* Dashboard Container */
+.main_dash {
+  margin-left: 250px; /* Offset for sidebar */
+  padding: 20px;
+  background-color: #F5F6FA;
+}
+
+/* Responsive margin for small screens */
+@media (max-width: 768px) {
+  .main_dash {
+    margin-left: 0; /* Remove sidebar offset */
+    padding: 10px;
+  }
+}
+
+/* Dashboard Cards */
+.dashboard .dashboard-box {
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Full height */
+  transition: transform 0.2s ease-in-out; /* Hover effect */
+}
+
+.dashboard .dashboard-box:hover {
+  transform: translateY(-5px);
+}
+
+/* User Icon Styles */
+.dashboard .User_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 23px;
+}
+
+.dashboard .User_icon svg {
+  font-size: 2.5em;
+}
+
+/* Icon Colors */
+.dashboard .uic1 {
+  background-color: #f8dd9f;
+}
+.dashboard .uic1 svg {
+  color: #FEC53D;
+}
+
+.dashboard .uic2 {
+  background-color: #97e7bf;
+}
+.dashboard .uic2 svg {
+  color: #4AD991;
+}
+
+.dashboard .uic3 {
+  background-color: #ebc1b3;
+}
+.dashboard .uic3 svg {
+  color: #FF9066;
+}
+
+/* Trend Indicator */
+.increase {
+  color: green;
+}
+
+.decrease {
+  color: red;
+}
+
+.percentage-change {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Graph Container */
+.Graph .grapg_pattern {
+  box-shadow: 6px 6px 54px 0px #0000000D;
+  border-radius: 15px;
+}
+
+.Graph img {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+}
+
+/* Adjust Graph Shadow on Small Screens */
+@media (max-width: 768px) {
+  .Graph .grapg_pattern {
+    box-shadow: none;
+  }
+}
