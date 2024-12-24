@@ -31,6 +31,8 @@ export default function Header() {
               <div className='menu'><Link className='head' to='/user/Techpro1'>Techpro1</Link></div>
               <div className='menu'><Link className='head' to='/user/Fooddish'>Fooddish</Link></div>
               <div className='menu'><Link className='head' to='/user/Collab'>Collab</Link></div>
+              <div className='menu'><Link className='head' to='/user/Design'>Design</Link></div>
+              <div className='menu'><Link className='head' to='/user/Invoice'>Invoice</Link></div>
             </div>
             <div className='btn'>
               <button type='button' onClick={handleBookNow}>Login</button>

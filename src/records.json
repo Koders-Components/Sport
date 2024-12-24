@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "clientname": "Harshil",
+      "appno": 10001,
+      "date": "12-12-2024",
+      "yourname": "Man",
+      "youradd": "Address here Zipcode & city name@email.com",
+      "clientadd": "Address here client@email.com",
+      "iban": "NL00 INGB 0000 0000 00",
+      "paypal": "name@email.com",
+      "items": [
+        {
+          "img": "/item/img/Watch1.png",
+          "description": "Titan Black and Gold Black Dial Quartz Multifunction Stainless Steel Strap watch for Men",
+          "rate": 20,
+          "hrs": 5,
+          "amount": 100
+        },
+        {
+          "img": "/item/img/Bracelet.png",
+          "description": "an article of jewellery that is worn around the wrist.",
+          "rate": 15,
+          "hrs": 3,
+          "amount": 45
+        }
+      ],
+      "yourmobno":"+31612345678" 
+    }
+  ]
+  

@@ -7,6 +7,8 @@ import Techproduct from './Techproduct/Techproduct';
 import Techproduct1 from './Techpro/Techproduct1';
 import Fooddish from './Fooddish/Fooddish';
 import Collab from './Collab/Collab';
+import Design from './Design/Design';
+import Invoice from './Invoice/Invoice';
 // import Banner from './Banner/Banner';
 
 const UserSideRoutes = () => {
@@ -21,6 +23,8 @@ const UserSideRoutes = () => {
         <Route path="/Techpro1" element={<Techproduct1/>} />
         <Route path="/Fooddish" element={<Fooddish/>} />
         <Route path="/Collab" element={<Collab/>} />
+        <Route path="/Design" element={<Design/>} />
+        <Route path="/Invoice" element={<Invoice/>} />
     </Routes>
     </>
   );

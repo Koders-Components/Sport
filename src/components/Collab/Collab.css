@@ -27,7 +27,6 @@
     flex-direction: column;
     height: 485px;
     width: 495px;
-    border: 2px solid black;
 }
 
 .collab_left1 p{
@@ -43,7 +42,6 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    border: 2px solid black;
 }
 
 .collab_left1 span{
@@ -57,7 +55,6 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #333333;
-    border: 2px solid black;
 }
 
 .collab_left1 button{
@@ -80,7 +77,6 @@
     gap: 24px;
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
 }
 
 .collab_main .collab_left_child{
@@ -160,7 +156,6 @@
     height: 754px;
     top: 96px;
     left: 755px;
-    border: 1px solid #000000;
 }
 
 .collab_right .collab_border{
@@ -171,4 +166,91 @@
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+/* Default layout for larger screens */
+@media (min-width: 1200px) {
+    .collab_main {
+        flex-direction: row;
+    }
+    .collab_left1 {
+        width: 495px;
+    }
+    .collab_main .collab_left2 {
+        width: 720px;
+    }
+}
+
+/* Tablet layout adjustments */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .collab_main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .collab_left1 {
+        width: 90%;
+        max-width: 495px;
+    }
+    .collab_main .collab_left2 {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+    .collab_main .collab_left_child {
+        width: 45%;
+        max-width: 224px;
+    }
+    .collab_right {
+        width: 80%;
+        max-width: 594px;
+        margin-top: 20px;
+    }
+    .collab_right .collab_border {
+        width: 90%;
+        max-width: 584px;
+    }
+}
+
+/* Mobile layout adjustments */
+@media (max-width: 767px) {
+    .collab_main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .collab_left1 {
+        width: 90%;
+        max-width: 400px;
+    }
+    .collab_left1 p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .collab_left1 span {
+        font-size: 1rem;
+    }
+    .collab_left1 button {
+        width: 70%;
+        height: 50px;
+    }
+    .collab_main .collab_left2 {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .collab_main .collab_left_child {
+        width: 90%;
+        max-width: 224px;
+    }
+    .collab_right {
+        width: 90%;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+    .collab_right .collab_border {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1; /* Maintain circular aspect */
+    }
 }

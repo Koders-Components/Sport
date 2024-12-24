@@ -1,0 +1,276 @@
+.delight_main{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.delight_main .delight_top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.delight_details{
+    padding: 80px 0 0 0;
+}
+
+.delight_top span{
+    width: 580px;
+    height: auto;
+    padding: 35px 40px 34px 40px;
+    border: 2px solid black;
+    font-family: Lato;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 76.8px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+}
+
+.delight_top .delight_details_child{
+    width: 558px;
+    height: auto;
+    padding: 35px 56px 34px 56px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.delight_details_child button{
+    width: 222px;
+    height: 66px;
+    border-radius: 40px;
+}
+
+.delight_details_child button:hover{
+    background: #333333;
+    color: white;
+}
+
+.delight_details2{
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+.delight_details2 .delight_child{
+    width: 509px;
+    height: 565.32px;
+    border-radius: 25.03px;
+    background: #5B57EB;
+    border: 2px solid #333333;
+    box-shadow: 18px 18px 0px 0px #413EAC;
+    position: relative;
+}
+
+.delight_child .delight_child_img{
+    width: 476.67px;
+    height: 656.32px;
+    border-radius: 10.43px;
+    position: absolute;
+    top: -94px;
+    left: 24px;
+}
+
+.delight_child_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.delight_details2 .delight_star{
+    width: 131px;
+    height: 131px;
+    position: absolute;
+    z-index: 1;
+    top: -21px;
+    left: -59px;
+}
+
+.delight_star img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.delight_details2 .delight_star1{
+    position: absolute;
+    width: 78.37px;
+    height: 77px;
+    top: 565px;
+    left: 456px;
+    z-index: 1;
+}
+
+.delight_star1 img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.delight_main .delight_bottom{
+    width: 1,270px;
+    height: 152px;
+    padding: 24px 80px 24px 80px;
+    gap: 166px;
+    border-radius: 40px ;
+    background: #F8D046;
+    border: 2px solid #333333;
+    box-shadow: 16px 16px 0px 0px #D7AA3B;
+    display: flex;
+    flex-direction: row;
+}
+
+.delight_bottom .delight_child{
+    width: 153px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.delight_child p{
+    width: 67px;
+    height: 38px;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.delight_child span{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 153px;
+    height: 58px;
+}
+/* Responsive for tablet screens (768px - 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .delight_main .delight_top {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .delight_top span,
+    .delight_top .delight_details_child {
+        width: 90%;
+        max-width: 580px;
+    }
+
+    .delight_details2 {
+        padding: 20px 0 0 0;
+    }
+
+    .delight_details2 .delight_child {
+        width: 90%;
+        max-width: 509px;
+        margin: 0 auto;
+    }
+
+    .delight_main .delight_bottom {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        width: 90%;
+        max-width: 1270px;
+        height: auto;
+    }
+
+    .delight_bottom .delight_child {
+        width: 45%;
+        max-width: 153px;
+    }
+}
+
+/* Responsive for mobile screens (up to 767px) */
+@media (max-width: 767px) {
+    .delight_main .delight_top {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .delight_top span,
+    .delight_top .delight_details_child {
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .delight_top span {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+
+    .delight_top .delight_details_child {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .delight_details_child button {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .delight_details2 .delight_child {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+        height: 400px;
+    }
+
+    .delight_child .delight_child_img {
+        width: 100%;
+        max-width: 280px;
+        top: -50px;
+        left: 10px;
+    }
+
+    .delight_main .delight_bottom {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .delight_bottom .delight_child {
+        width: 100%;
+        max-width: 150px;
+        text-align: center;
+    }
+
+    .delight_child p {
+        font-size: 24px;
+    }
+
+    .delight_child span {
+        font-size: 18px;
+    }
+}

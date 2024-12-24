@@ -47,9 +47,10 @@
 }
 
 .containerhead .menu .head{
-    font-size: small;
+    font-size:14px;
     font-weight: 500;
     color: black;
+    text-decoration: none;
 }
 
 .containerhead .menu:hover{
