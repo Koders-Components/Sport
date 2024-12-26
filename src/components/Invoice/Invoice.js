@@ -1,43 +1,39 @@
-import React, { useRef } from 'react';
+import React  from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import data from '../../records.json'; 
-import { PDFExport } from '@progress/kendo-react-pdf';
+import { usePDF } from 'react-to-pdf';
+import data from '../../records.json';
 
 function Invoice() {
-  const pdfRef = useRef(null);
-
-  const exportPDF = () => {
-    if (pdfRef.current) {
-      pdfRef.current.save();
-    }
-  };
+  const { toPDF, targetRef } = usePDF({filename: 'page.pdf'});
 
   return (
     <div className="container-fluid mt-3">
-      <PDFExport
-        ref={pdfRef}
-        paperSize="A4"
-        margin={{ top: 20, bottom: 20, left: 20, right: 20 }}
-        scale={0.75}
-      >
+      {/* Button to download PDF */}
+      <div className="text-center mb-3">
+        <button className="btn btn-primary" onClick={() => toPDF()}>
+          Download PDF
+        </button>
+      </div>
+
+      <div ref={targetRef} className="invoice-container">
         {data.map((invoice) => (
-          <div key={invoice.id} style={{ pageBreakInside: "avoid" }}>
+          <div key={invoice.id} style={{ pageBreakInside: 'avoid' }}>
             {/* Invoice Header */}
             <div className="row mb-4">
               <div className="col-md-6">
                 <div
                   style={{
-                    backgroundColor: "transparent",
-                    width: "100px",
-                    height: "100px",
-                    border:"2px solid #FBA677",
-                    display: "flex",
-                    alignItems:"center",
-                    justifyContent:"center",
-                    paddingBottom:"15px",
-                    lineHeight: "50px",
-                    fontWeight: "bold",
-                    fontSize:"7em"
+                    backgroundColor: 'transparent',
+                    width: '100px',
+                    height: '100px',
+                    border: '2px solid #FBA677',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    paddingBottom: '15px',
+                    lineHeight: '50px',
+                    fontWeight: 'bold',
+                    fontSize: '7em',
                   }}
                 >
                   A
@@ -67,8 +63,12 @@ function Invoice() {
             <div className="row mb-4">
               <div className="col-md-6">
                 <h5>Payment Info--</h5>
-                <p><strong>IBAN:</strong> {invoice.iban}</p>
-                <p><strong>PayPal:</strong> {invoice.paypal}</p>
+                <p>
+                  <strong>IBAN:</strong> {invoice.iban}
+                </p>
+                <p>
+                  <strong>PayPal:</strong> {invoice.paypal}
+                </p>
               </div>
             </div>
 
@@ -92,8 +92,7 @@ function Invoice() {
                             src={item.img}
                             alt="Item"
                             style={{ width: '50px', height: '50px' }}
-                          />
-                          {" "}
+                          />{' '}
                           {item.description}
                         </td>
                         <td>€{item.rate.toFixed(2)}</td>
@@ -112,30 +111,36 @@ function Invoice() {
                 <p>{invoice.paymentTerms}</p>
               </div>
               <div className="col-md-6 text-end">
-                <p><strong>Subtotal:</strong> €{invoice.items.reduce((acc, item) => acc + item.amount, 0).toFixed(2)}</p>
-                <p><strong>BTW 21%:</strong>
-                  €{(invoice.items.reduce((acc, item) => acc + item.amount, 0) * 0.21).toFixed(2)}
+                <p>
+                  <strong>Subtotal:</strong> €{invoice.items
+                    .reduce((acc, item) => acc + item.amount, 0)
+                    .toFixed(2)}
                 </p>
-                <h5><strong>Total:</strong> €{(invoice.items.reduce((acc, item) => acc + item.amount, 0) * 1.21).toFixed(2)}</h5>
+                <p>
+                  <strong>BTW 21%:</strong> €{(
+                    invoice.items.reduce((acc, item) => acc + item.amount, 0) *
+                    0.21
+                  ).toFixed(2)}
+                </p>
+                <h5>
+                  <strong>Total:</strong> €{(
+                    invoice.items.reduce((acc, item) => acc + item.amount, 0) *
+                    1.21
+                  ).toFixed(2)}
+                </h5>
               </div>
             </div>
           </div>
         ))}
-      </PDFExport>
-
-      {/* Print Button */}
-      <div className="text-center mt-3 mb-4">
-        <button className="btn btn-primary" onClick={exportPDF}>
-          Print Invoice
-        </button>
       </div>
 
       {/* Footer */}
-      {/* Footer */}
-      <div className="row" style={{ backgroundColor: "#F9F9FA" }}>
+      <div className="row" style={{ backgroundColor: '#F9F9FA' }}>
         <div className="col-12 text-center py-3">
           <p>Thank you!</p>
-          <p>{data[0]?.yourname} | {data[0]?.yourmobno} | {data[0]?.youradd}</p>
+          <p>
+            {data[0]?.yourname} | {data[0]?.yourmobno} | {data[0]?.youradd}
+          </p>
         </div>
       </div>
     </div>
