@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { usePDF } from 'react-to-pdf';
 import data from '../../records.json';
@@ -15,9 +15,12 @@ function Invoice() {
         </button>
       </div>
 
-      <div ref={targetRef} className="invoice-container">
+      <div ref={targetRef} className="invoice-container"
+        style={{
+          padding: '10px', // Add padding around the invoice for better spacing
+        }}>
         {data.map((invoice) => (
-          <div key={invoice.id} style={{ pageBreakInside: 'avoid' }}>
+          <div key={invoice.id} style={{ pageBreakInside: 'avoid',border:'2px solid black',padding:'20px'}}>
             {/* Invoice Header */}
             <div className="row mb-4">
               <div className="col-md-6">
@@ -130,19 +133,19 @@ function Invoice() {
                 </h5>
               </div>
             </div>
+            <div className="row" style={{ backgroundColor: '#F9F9FA'}}>
+              <div className="col-12 text-center py-3">
+                <p>Thank you!</p>
+                <p>
+                  {data[0]?.yourname} | {data[0]?.yourmobno} | {data[0]?.youradd}
+                </p>
+              </div>
+            </div>
           </div>
         ))}
       </div>
 
       {/* Footer */}
-      <div className="row" style={{ backgroundColor: '#F9F9FA' }}>
-        <div className="col-12 text-center py-3">
-          <p>Thank you!</p>
-          <p>
-            {data[0]?.yourname} | {data[0]?.yourmobno} | {data[0]?.youradd}
-          </p>
-        </div>
-      </div>
     </div>
   );
 }
