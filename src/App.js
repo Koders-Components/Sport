@@ -6,6 +6,8 @@ import LoginPage from './components/Login/Login';
 import Adminheader from './components/Adminpages/Adminheader'; 
 import Adminsiderouts from './components/Adminsiderouts';
 import SIgnup from './components/Signup/SIgnup';
+import Extsiderouts from './components/Extsiderouts';
+import Extheader from './components/Ext/Extheader/Extheader';
 
 function App() {
   return (
@@ -36,6 +38,16 @@ function App() {
             <>
               <Adminheader />
               <Adminsiderouts />
+            </>
+          }
+        />
+
+        <Route
+          path="/ext/*"
+          element={
+            <>
+              <Extheader/>
+              <Extsiderouts/>
             </>
           }
         />
