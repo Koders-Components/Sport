@@ -10,7 +10,7 @@ export default function Extheader() {
         </div>
         <div className='header_type'>
             <div className='head_list'><Link className='middle' to='/ext'>Home</Link></div>
-            <div className='head_list'><Link className='middle' to='/'>Service</Link></div>
+            <div className='head_list'><Link className='middle' to='/ext/whitespace'>Service</Link></div>
             <div className='head_list'><Link className='middle' to='/'>Contact</Link></div>
             <div className='head_list'><Link className='middle' to='/'>Help</Link></div>
         </div>

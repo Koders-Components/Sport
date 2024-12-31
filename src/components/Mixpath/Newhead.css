@@ -1,0 +1,165 @@
+.space_main{
+    background-color: #043873;
+    width: 100%;
+    height: 92px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    margin: 0;
+}
+
+.space_main .space_logo{
+    width: 37px;
+    height: 29px;
+}
+
+.space_logo_name{
+    width: 191px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space_logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.space_logo_name h3{
+    width: 144px;
+    height: 34px;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.89px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.space_head_btn{
+    width: 988.5px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space_header{
+    display: flex;
+    flex-direction: row;
+    width: 551.5px;
+    height: 24px;
+    justify-content: space-between;
+}
+
+/* dropdown css */
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown button */
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: left;
+    width: 89px;
+    height: 23px;
+    }
+  
+  /* Add space for the arrow */
+  .dropbtn .arrow {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Dropdown content links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Hover to display dropdown content */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Hover effect for dropdown links */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Style for the button on hover */
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }  
+
+/* Button css */
+
+.space_btn{
+    width: 377px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.space_btn .sbtn1 button{
+    width: 126px;
+    height: 60px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 8px;
+    opacity: 0px;
+    background: #FFE492;
+    color: #043873;
+    border: none;
+}
+
+.space_btn .sbtn2 button{
+    width: 227px;
+    height: 60px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 8px;
+    background: #4F9CF9;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    color: #FFFFFF;
+    border: none;
+}
+
+.sbtn2 button svg{
+    font-size: 30px;
+}   
