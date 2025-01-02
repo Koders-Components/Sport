@@ -1,7 +1,8 @@
 import React from 'react'
 import './Space.css';
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { LuCircleCheckBig } from "react-icons/lu";
+import { LuCircleCheckBig, LuFacebook, LuInstagram, LuLinkedin} from "react-icons/lu";
+import { MdOutlineLanguage } from "react-icons/md";
 import Slider from './Spaceslider';
 
 export default function Space() {
@@ -271,11 +272,80 @@ export default function Space() {
             <div className='footer'>
                 <div className='main_footer_cont'>
                     <div className='footer_top'>
-
+                        <div className='footer_top_child1'>
+                            <div className='top_child1_logo'>
+                                <img src="/item/img/Space.png" alt="" />
+                                <p> whitepace </p>
+                            </div>
+                            <div className='top_child1_desc'>
+                                whitepace was created for the new ways we live and work. We make a better workspace around the world
+                            </div>
+                        </div>
+                        <div className='footer_top_child2'>
+                            <p>Product</p>
+                            <a href="/">Overview</a>
+                            <a href="/">Pricing</a>
+                            <a href="/">Customer stories</a>
+                        </div>
+                        <div className='footer_top_child2'>
+                            <p>Resources</p>
+                            <a href="/">Blog</a>
+                            <a href="/">Guides & tutorials</a>
+                            <a href="/">Help center</a>
+                        </div>
+                        <div className='footer_top_child2'>
+                            <p>Company</p>
+                            <a href="/">About us</a>
+                            <a href="/">Careers</a>
+                            <a href="/">Media Kit</a>
+                        </div>
+                        <div className='footer_top_child3'>
+                            <p>
+                                Try It Today
+                            </p>
+                            <span>
+                                Get started for free.
+                                Add your whole team as your needs grow.
+                            </span>
+                            <button type='submit'>
+                                Start today
+                                <IoIosArrowRoundForward/>
+                            </button>
+                        </div>
                     </div>
                     <hr/>
                     <div className='footer_bottom'>
-                        
+                        <div className='footer_bottom_left'>
+                            <div className='bottom_child1'>
+                                <MdOutlineLanguage/>
+                                <div className="dropdown">
+                                    <button className="dropbtn">
+                                        Language <span className="arrow">▼</span>
+                                    </button>
+                                    <div className="dropdown-content">
+                                        <a href="#feature1">English</a>
+                                        <a href="#feature2">Hindi</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='bottom_child2'>
+                                <h6>Terms & privacy</h6>
+                                <h6>Security</h6>
+                                <h6>Status</h6>
+                                <h6>©2021 Whitepace LLC.</h6>
+                            </div>
+                        </div>
+                        <div className='footer_bottom_right'>
+                            <div className='footer_media'>
+                                <LuFacebook/>
+                            </div>
+                            <div className='footer_media'>
+                                <LuInstagram/>
+                            </div>
+                            <div className='footer_media'>
+                                <LuLinkedin/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

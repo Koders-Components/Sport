@@ -162,4 +162,46 @@
 
 .sbtn2 button svg{
     font-size: 30px;
-}   
+}  
+
+@media (max-width: 1440px) {
+  .space_main {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .space_main {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .space_head_btn {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 567px) {
+  .space_header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .space_btn {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .space_header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
