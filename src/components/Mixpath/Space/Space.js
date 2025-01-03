@@ -4,11 +4,14 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { LuCircleCheckBig, LuFacebook, LuInstagram, LuLinkedin} from "react-icons/lu";
 import { MdOutlineLanguage } from "react-icons/md";
 import Slider from './Spaceslider';
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax'
 
 export default function Space() {
   return (
-    <div>
+    <>
+    <ParallaxProvider>
         <div className='main_space'>
+            <Parallax speed={-1}>
             <div className='first_space'>
                 <div className='first_space_left'>
                     <p>
@@ -25,6 +28,8 @@ export default function Space() {
                 <div className='first_space_right'>
                 </div>
             </div>
+            </Parallax>
+            <Parallax speed={10}>
             <div className='second_space'>
                 <div className='second_top'>
                     <div className='second_top_left'>
@@ -60,6 +65,8 @@ export default function Space() {
                     </div>
                 </div>
             </div>
+            </Parallax>
+            <Parallax speed={-3}>
             <div className='third_space'>
                 <div className='third_space_left'>
                     <p>
@@ -75,6 +82,8 @@ export default function Space() {
                 </div>
                 <div className='third_space_right'></div>
             </div>
+            </Parallax>
+            <Parallax speed={10}>
             <div className='fourth_space'>
                 <div className='fourth_space_left'>
                 </div>
@@ -92,6 +101,8 @@ export default function Space() {
                     </button>
                 </div>
             </div>
+            </Parallax>
+            <Parallax speed={-3}>
             <div className='five_space'>
                 <div className='five_space_top'>
                     <p>
@@ -158,6 +169,8 @@ export default function Space() {
                     </div>
                 </div>
             </div>
+            </Parallax>
+            <Parallax speed={10}>
             <div className='six_space'>
                 <div className='six_space_top'>
                     <div className='six_top_child1'>
@@ -174,6 +187,8 @@ export default function Space() {
                     </button>
                 </div>
             </div>
+            </Parallax>
+            <Parallax speed={-3}>
             <div className='seven_space'>
                 <div className='seven_left'>
                     <p>
@@ -190,6 +205,8 @@ export default function Space() {
                     <img src="/item/img/Yourdata.png" alt="" />
                 </div>
             </div>
+            </Parallax>
+            <Parallax speed={10}>
             <div className='eight_space'>
                 <div className='eight_space_top'>
                     Our sponsors
@@ -217,6 +234,8 @@ export default function Space() {
                     </div>
                 </div>
             </div>
+            </Parallax>
+            <Parallax speed={-3}>
             <div className='nine_space'>
                 <div className='nine_space_left'>
                     <img src="/item/img/Apps.png" alt="" />
@@ -233,6 +252,8 @@ export default function Space() {
                     </button>
                 </div>
             </div>
+            </Parallax>
+            <Parallax speed={10}>
             <div className='ten_space'>
                 <div className='ten_space_top'>
                     What Our Clients Says
@@ -241,6 +262,7 @@ export default function Space() {
                     <Slider/>
                 </div>
             </div>
+            </Parallax>
             <div className='eleven_space'>
                 <div className='eleven_head'>
                     <p>
@@ -350,6 +372,7 @@ export default function Space() {
                 </div>
             </div>
         </div>
-    </div>
+        </ParallaxProvider>
+    </>
   )
 }
