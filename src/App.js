@@ -12,11 +12,11 @@ function App() {
     <Router>
       <Routes>
         {/* Default Route to Redirect to Login */}
-        <Route path="/" element={<Navigate to="/Login" />} />
+        <Route path="/" element={<Navigate to="/user" />} />
 
         {/* Public Route */}
-        <Route path="/Login" element={<LoginPage />} />
-        <Route path="/Signup" element={<SIgnup/>} />
+        {/* <Route path="/Login" element={<LoginPage />} />
+        <Route path="/Signup" element={<SIgnup/>} /> */}
 
         {/* User-Specific Routes */}
         <Route
