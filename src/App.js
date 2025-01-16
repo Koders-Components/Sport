@@ -6,6 +6,10 @@ import LoginPage from './components/Login/Login';
 import Adminheader from './components/Adminpages/Adminheader'; 
 import Adminsiderouts from './components/Adminsiderouts';
 import SIgnup from './components/Signup/SIgnup';
+import Extsiderouts from './components/Extsiderouts';
+import Extheader from './components/Ext/Extheader/Extheader';
+import Mixpath from './components/Mixpath';
+import Newheader from './components/Mixpath/Newheader';
 
 function App() {
   return (
@@ -39,6 +43,27 @@ function App() {
             </>
           }
         />
+
+        <Route
+          path="/ext/*"
+          element={
+            <>
+              <Extheader/>
+              <Extsiderouts/>
+            </>
+          }
+        />
+
+        <Route
+          path="/mix/*"
+          element={
+            <>
+              <Newheader/>
+              <Mixpath/>
+            </>
+          }
+        />
+        
       </Routes>
     </Router>
   );

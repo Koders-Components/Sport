@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 const Form = () => {
+  // this is initial state empty for all the text box when i put some data using text box at that time it will become with puted data 
+  // and that thing happen throw the handalchange
   const [formData, setFormData] = useState({
     firstName: '',
     middleName: '',
@@ -86,10 +88,6 @@ const Form = () => {
     } else {
       console.log('Form validation failed.');
     }
-  };
-
-  const Resetbtn = (e) => {
-    
   };
 
   return (
@@ -223,9 +221,6 @@ const Form = () => {
 
         <button type="submit" className="btn btn-primary">
           Submit
-        </button>
-        <button type="submit" className="btn btn-primary" onSubmit={Resetbtn}>
-          reset
         </button>
       </form>
     </div>

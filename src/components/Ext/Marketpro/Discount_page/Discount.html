@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount page</title>
+    <link rel="stylesheet" href="Discount.css">
+</head>
+<body>
+    <div class="main_discount">
+        <div class="discount_top">
+            <div class="discount_logo">
+                <img src="Discount.png" alt="">
+            </div>
+            <div class="discount_details">
+                <div class="discount_details1">
+                    Amazing Discounts and Coupons from Bata
+                </div>
+                <div class="discount_details2">
+                    Find all the latest deals and savings on your favorite products here!
+                </div>
+            </div>
+        </div>
+        <div class="discount_bottom">
+            <div class="discount_bottom1">
+                <div class="discount_bottom_child1">
+                    Coupons
+                </div>
+                <div class="discount_bottom_child2">
+                    <div class="bottom_child1">
+                        <img src="Symbol.png" alt="">
+                        <p>Use our code to get an EXTRA 20% off on your purchase!</p>
+                    </div>
+                    <div class="bottom_child2">
+                        <div class="child1">
+                            <span id="copyText">TBSMULIO200</span>
+                            <button type="button" onclick="copyText()" class="copybtn">
+                                <img src="Copy.png" alt="Copy">
+                            </button>
+                        </div>
+                        <a href="https://www.nike.com/w/nike-app-days-sale-60uk8" class="linkbtn">Visit Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="discount_bottom1">
+                <div class="discount_bottom_child1">
+                    Allen Solly’s Coupons
+                </div>
+                <div class="discount_bottom_child2">
+                    <div class="bottom_child1">
+                        <img src="Vector.png" alt="">
+                        <p>Use our code to get an EXTRA 20% off on your purchase!</p>
+                    </div>
+                    <div class="bottom_child2">
+                        <div class="child1">
+                            <span id="copyText">ALSFIRST200</span>
+                            <button type="button" onclick="copyText()" class="copybtn">
+                                <img src="Copy.png" alt="Copy">
+                            </button>
+                        </div>
+                        <a href="https://allensolly.abfrl.in/" class="linkbtn">Visit Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="available_offers">
+            <div class="offer">
+                <p>Available Offers</p>
+                <div class="offer_cards">
+                    <div class="offer_card">
+                        <div class="offer_img">
+                            <img src="Hdfc.png" alt="">
+                        </div>
+                        <div class="offer_details">
+                            Get 30% off when you use your HDFC Credit Card. Save big on your purchases. TCA
+                        </div>
+                    </div>
+                </div>
+                <div class="offer_cards">
+                    <div class="offer_card">
+                        <div class="offer_img">
+                            <img src="Paytm.png" alt="">
+                        </div>
+                        <div class="offer_details">
+                            Get 30% off when you use your HDFC Credit Card. Save big on your purchases. TCA
+                        </div>
+                    </div>
+                </div>
+                <div class="offer_cards">
+                    <div class="offer_card">
+                        <div class="offer_img">
+                            <img src="Bank.png" alt="">
+                        </div>
+                        <div class="offer_details">
+                            Get 30% off when you use your HDFC Credit Card. Save big on your purchases. TCA
+                        </div>
+                    </div>
+                </div>
+                <div class="offer_cards">
+                    <div class="offer_card">
+                        <div class="offer_img">
+                            <img src="Icici.png" alt="">
+                        </div>
+                        <div class="offer_details">
+                            Get 30% off when you use your HDFC Credit Card. Save big on your purchases. TCA
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyText() {
+            // Get the text to copy
+            const textToCopy = document.getElementById('copyText').innerText;
+        
+            // Copy the text to the clipboard
+            navigator.clipboard.writeText(textToCopy)
+                .then(() => {
+                    alert('Copied: ' + textToCopy); // Show feedback to the user
+                })
+                .catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+        }        
+    </script>
+</body>
+</html>

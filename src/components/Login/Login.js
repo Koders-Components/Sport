@@ -14,6 +14,12 @@ const LoginPage = () => {
       navigate('/user'); // Redirect to user page
     } else if (email === 'admin' && password === 'admin') {
       navigate('/admin'); // Redirect to admin page
+    }
+    else if (email === 'ext1' && password === 'ext1') {
+      navigate('/ext'); // Redirect to admin page
+    }
+    else if (email === 'mix' && password === 'mix') {
+      navigate('/mix'); // Redirect to admin page
     } else {
       alert('Invalid credentials');
     }

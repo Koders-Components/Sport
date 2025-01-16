@@ -1,0 +1,1101 @@
+.main_market{
+    padding: 0;
+    margin: 0;
+}
+
+.market_main{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+}
+
+.market_main .market_page1{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.market_page1_child1{
+    height: 633px;
+    width: 742px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.market_page1_child1 .market_title{
+    width: 620px;
+    height: 294px;
+    font-family: Inter;
+    font-size: 86px;
+    font-weight: 600;
+    line-height: 98.49px;
+}
+
+.market_page1_child1 p m{
+    color: #008080;
+}
+
+.market_page1_child1 span{
+    width: 600px;
+    height: 123px;
+    display: flex;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40.93px;
+}
+
+.market_page1_child1 .email_box{
+    width: 617px;
+    height: 76px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.email_box button{
+    width: 192px;
+    height: 76px;   
+    border-radius: 4px;
+    font-size: 20px;
+    border: none;
+    background-color: #008080;
+    color: white
+}
+
+.email_box .email_input{
+    width: 404px;
+    height: 76px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 24px;
+    gap: 10px;
+    box-shadow: 0px 10px 50px 0px #0B0B0B14;
+}
+
+.email_box svg{
+    font-size: 2em;
+    color: #7E7E7E;
+}
+
+.email_input input{
+    width: 204px;
+    height: 40px;
+    color: #7E7E7E;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+
+.email_input input:focus{
+    outline: none;
+}
+
+.market_page1 .market_page2_child1{
+    width: 628px;
+    height: 633px;
+    position: relative;
+}
+
+.market_page2_child1 .chart1{
+    width: 450px;
+    height: 287px;
+    border-radius: 35px 4px 35px 4px;
+    position: absolute;
+    left: 20px;
+    top: 303px;
+}
+
+.chart1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 35px 4px 35px 4px;
+}
+
+.market_page2_child1 .chart2{
+    width: 385px;
+    height: 316px;
+    border-radius: 35px 4px 35px 4px;
+    position: absolute;
+    left: 220px;
+}
+
+.chart2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 35px 4px 35px 4px;
+}
+
+.chartborder{
+    position: absolute;
+    width: 601px;
+    height: 495px;
+    top: 22px;
+}
+
+.chartborder img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;   
+}
+
+/* market_page2 */
+
+.market_page2{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+.mrq_image img {
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(0.5); /* Makes all images grayscale with adjusted brightness */
+    transition: filter 0.3s ease-in-out; /* Smooth effect on hover or state change */
+}
+
+.mrq_image img:hover {
+    filter: grayscale(0%) brightness(1); /* Remove grayscale and brighten on hover */
+
+}
+/* market_page3 css */
+
+.market_page3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.market_page3_child1{
+    width: 679px;
+    height: 593px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.market_page3_child1 .our_exp{
+    width: 272px;
+    height: 35px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_exp p{
+    width: 156px;
+    height: 35px;
+    border-radius: 4px;
+    text-align: center;
+    background: #20CFC614;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.our_exp hr{
+    border: 1px solid #008080;
+    width: 96px;
+    border-radius: 2px;
+}
+
+.our_exp1 .our_exp_child1{
+    width: 609px;
+    height: 183 px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61.45px;
+}
+
+.our_exp1 .our_exp_child2{
+    width: 679px;
+    height: 243px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #575757;
+}
+
+.our_exp_btn button{
+    width: 239px;
+    height: 76px;
+    border-radius: 4px;
+    border: 3px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32.23px;
+}
+
+.our_exp_btn button:hover{
+    color: white;
+    background-color: #008080;
+}
+
+.market_page3_child2{
+    width: 659px;
+    height: 593px;
+    border-radius: 35px 4px 35px 4px;
+    background: #E0F8F8;
+    position: relative;
+}
+
+.market_page3_child2 .profile1{
+    width: 430px;
+    height: 501px;
+    border-radius: 35px 4px 35px 4px;
+    position: absolute;
+    top: 36px;
+    left: 100px;
+}
+
+.profile1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 35px 4px 35px 4px;
+    object-fit: cover;
+}
+
+.market_page3_child2 .profile2{
+    width: 356px;
+    height: 346px;
+    border-radius: 35px 4px 35px 4px;
+    position: absolute;
+    top: 226px;
+    left: 20px;
+}
+
+.profile2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 35px 4px 35px 4px;
+    object-fit: cover;
+}
+
+/* market_page4 */
+
+.market_page4{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.market_page4_child1{
+    width: 679px;
+    height: 593px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.market_page4_child1 .our_exp_ch1{
+    width: 272px;
+    height: 35px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_exp_ch1 p{
+    width: 156px;
+    height: 35px;
+    border-radius: 4px;
+    text-align: center;
+    background: #20CFC614;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.our_exp_ch1 hr{
+    border: 1px solid #008080;
+    width: 96px;
+    border-radius: 2px;
+}
+
+.our_exp1_ch1 .our_exp_child1{
+    width: 609px;
+    height: 183px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61.45px;
+}
+
+.our_exp1_ch1 .our_exp_child2{
+    width: 679px;
+    height: 243px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #575757;
+}
+
+.our_exp_btn1 button{
+    width: 239px;
+    height: 76px;
+    border-radius: 4px;
+    border: 3px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32.23px;
+}
+
+.our_exp_btn1 button:hover{
+    color: white;
+    background-color: #008080;
+}
+
+.market_page4_child2{
+    width: 659px;
+    height: 593px;
+    border-radius: 35px 4px 35px 4px;
+    background: #E0F8F8;
+    position: relative;
+}
+
+.market_page4_child2 .profile1_ch{
+    width: 454px;
+    height: 501px;
+    border-radius: 35px 4px 35px 4px;
+    position: absolute;
+    top: 36px;
+    left: 30px;
+}
+
+.profile1_ch img{
+    height: 100%;
+    width: 100%;
+    border-radius: 35px 4px 35px 4px;
+    object-fit: cover;
+}
+
+.market_page4_child2 .profile2_ch{
+    width: 356px;
+    height: 346px;
+    border-radius: 35px 4px 35px 4px;
+    position: absolute;
+    top: 226px;
+    left: 159px;
+}
+
+.profile2_ch img{
+    height: 100%;
+    width: 100%;
+    border-radius: 35px 4px 35px 4px;
+    object-fit: cover;
+}
+
+.our_exp_child2_option{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: auto;
+    justify-content: space-evenly;
+}
+
+.option_list{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 39px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+/* market page5 */
+
+.market_page5{
+    width: 100%;
+    height: auto;
+}
+
+.market_head{
+    display: flex;
+    flex-direction: row;
+    width: 278px;
+    height: 35px;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.market_head p{
+    width: 156px;
+    height: 35px;
+    border-radius: 4px;
+    text-align: center;
+    background: #20CFC614;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.market_head hr{
+    border: 1px solid #008080;
+    width: 96px;
+    border-radius: 2px;
+}
+
+.market_head1{
+    width: 679px;
+    height: 61px;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61.45px;
+}
+
+.market_head2{
+    width: 679px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #575757;
+}
+
+.testimonials{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.testimonials .tm1{
+    width: 430px;
+    height: 403px;
+    border-radius: 35px 4px 35px 4px;
+    border: 2px solid #D5DDDD;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonials .tm1:hover{
+    background-color:#008080;
+    color: white ;
+}
+
+.tm1_userinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.tm1_useimg{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.tm1_useimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.tm1_usenm_des{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tm1_usernm{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.73px;
+}
+
+.tm1_des{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30.73px;
+    color: #B0B0B0;
+}
+
+.tm1_desc{
+    width: auto;
+    height: 144px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36.2px;
+    color: #575757;
+}
+
+.tm1_logo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    width: 55px;    
+    height: 67px;
+    top: 593px;
+    left: 346px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Chonburi;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 128.02px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #008080;
+}
+
+/* market_page6 */
+
+.market_page6{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.market_page6 .market_page_head{ 
+    width: 856px;
+    height: 102px;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 51.21px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1E1E1E;
+}
+
+.market_page_bottom_child1{
+    width: 407px;
+    height: 382px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom_child_logo{
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    background-color: #DAFAFC;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bottom_child_logo svg{
+    font-size: 4em;
+    color: #008080;
+}
+
+.bottom_child_dtl{
+    width: 407px;
+    height: 170px;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35.85px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.bottom_child_dtl p{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #575757;
+}
+
+.bottom_read{
+    width: 113px;
+    height: 28px;
+}
+
+.bottom_read a{
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28.16px;
+    text-align: left;
+    color: #008080;
+}
+
+.market_page_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* market_page7 */
+
+.market_page7{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: #008080;
+    border-radius: 35px 8px 35px 8px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.market_page7_right{
+    width: 626px;
+    height: 462px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.market_page7_right_head{
+    width: 237px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: left;
+    color: #2CDFD5;
+}
+
+.market_page7_right_head hr{
+    border: 1px solid #2CDFD5;
+    width: 96px;
+    border-radius: 2px;
+}
+
+.market_page7_right_dtl{
+    width: 500px;
+    height: 122px;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61.45px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+    color: #FFFFFF;
+}
+
+.market_page7_right_email{
+    width: 563px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.market_page7_right_email input{
+    width: 373px;
+    height: 72px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29.3px;
+    text-align: left;
+}
+
+.market_page7_right_email input:focus{
+    outline: none;
+}
+
+.market_page7_right_email button{
+    width: 181px;
+    height: 72px;
+    border: 2px solid black ;
+    border-radius: 4px;
+    background: #20CFC6;
+    color: white;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29.3px;
+    border: none;
+}
+
+.market_page7_right_trynow{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    color: #D3D3D3;
+    width: 536px;
+    height: 30px;
+}
+
+.market_page7_right_trynow a{
+    color: #20CFC6;
+    text-decoration: none;
+}
+
+.market_page7_left{
+    width: 588px;
+    height: 462px;
+    position: relative;
+}
+
+.page7_img1{
+    width: 466px;
+    height: 462px;
+    border-radius: 35px 4px 35px 4px;
+    position: absolute;
+    left: 100px;
+}
+
+.page7_img1 img{
+    border-radius: 35px 4px 35px 4px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page7_img2{
+    width: 234px;
+    height: 238px;
+    border-radius: 35px 4px 35px 4px;
+    position: absolute;
+    top: 175px;
+    left: 0px;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 20px 50px;
+    background-color: #008080;
+}
+
+.footer_top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer .footer_first{
+    width: 430px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_first p{
+    font-size: 2em;
+    color: white;
+}
+
+.footer_first span{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: left;
+    color: white;
+}
+
+.media_footer{
+    width: 400px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.first_media{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.first_media a{
+    color: white;
+    text-decoration: none;
+}
+
+.our_service{
+    height: 280px;
+    width: 196px;
+    color: white;
+    font-size: 2em;
+}
+
+.our_service a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+.explore_more{
+    height: 280px;
+    width: 196px;
+    color: white;
+    font-size: 2em;
+}
+
+.explore_more a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact_dtl{
+    width: 217px;
+    height: auto;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33.29px;
+    color: white;
+    line-height: 50px;
+}
+
+.contact_dtl .email a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+.footer_bottom_line hr{ 
+    border: 2px solid #E1E1E1;
+}
+
+.footer_bottom1_dtl{
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_bottom2_dtl{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1200px) { 
+    .market_main {
+        padding: 30px;
+    }
+    .market_page1,
+    .market_page3,
+    .market_page4,
+    .market_page7,
+    .footer_top{
+        width: 80%;
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .testimonials,
+    .market_page_bottom{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .market_page1{
+        width: 80%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .market_page6 .market_page_head {
+        width: 675px;
+        height: 117px
+    }
+
+    .page7_img1 img {
+        border-radius: 35px 4px 35px 4px;
+        height: 100%;
+        width: 78%;
+        object-fit: cover;
+    }
+
+    .market_page7{
+        padding: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) { 
+    .market_page1_child1 .market_title {
+        width: 347px;
+        font-size: 54px;
+        line-height: 79.49px;
+        text-align: center;
+    }
+
+    .chart2 img {
+        height: 100%;
+        width: 44%;
+    }
+
+    .chart1 img {
+        width: 80%;
+    }
+
+    .chartborder img {
+        height: 75%;
+        width: 50%;
+    }
+
+    .market_page1_child1 span {
+        width: 365px;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .market_page1_child1 .email_box {
+        width: 400px;
+        height: 96px;
+        flex-direction: column;
+    }
+    .page7_img1 img {
+        border-radius: 35px 4px 35px 4px;
+        height: 100%;
+        width: 50%;
+        object-fit: cover;
+    }   
+
+    .market_page7_right_email {
+        width: 400px;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .market_page7_right_email input {
+        width: 266px;
+    }
+
+    .market_page7_right_trynow {
+        font-size: 15px;
+        width: 400px;
+    }
+
+    .page7_img1 {
+        width: 400px;
+    }
+
+    .market_page6 .market_page_head {
+        width: 400px;
+        height: 153px;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .market_head2 {
+        width: 400px;
+        height: 111px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .market_head1 {
+        font-size: 30px;
+    }
+    .our_exp1 .our_exp_child1,
+    .our_exp1_ch1 .our_exp_child1 {
+        width: 400px;
+        height: 248px;
+        text-align: center;
+    }
+    .our_exp1_ch1 .our_exp_child2 {
+        width: 55%;
+        text-align: center;
+    }
+    .our_exp_child2_option {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .market_page3_child2,
+    .market_page4_child2{
+        width: 400px;
+        height: 600px;
+    }
+    .our_exp1 .our_exp_child2 {
+        width: 400px;
+        height: 92px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } 
+    .profile1 img,
+    .profile1_ch img{
+        width: 67%;
+    } 
+
+    .profile2_ch img {
+        width: 60%;
+    }
+
+    .market_page1_child1 {
+        height: 633px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .market_page7{
+        padding: 10px;
+        width: 90%;
+    }
+    .market_page7_right{
+        width: 400px;
+    }
+    .market_page7_right_dtl {
+        width: 369px;
+        font-size: 30px;
+        text-align: center;
+    }
+}
