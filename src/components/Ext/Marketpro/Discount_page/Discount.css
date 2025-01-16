@@ -1,3 +1,6 @@
+.main_discount{
+    padding: 150px 88px 0 88px;
+}
 .discount_top
 {
     width: 100%;
@@ -14,6 +17,7 @@
 .discount_logo{
     width: 325px;
     height: 288px;
+    padding-left: 50px;
 }
 
 .discount_logo img{
@@ -104,11 +108,22 @@
     gap: 10px;
 }
 
+.cimg{
+    width: 75px;
+    height: 86px;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
 .bottom_child2{
     width:  580px;
     height: 56px;
     display: flex;
     flex-direction: row;
+    gap: 20px;
     justify-content: space-between;
 }
 
@@ -120,9 +135,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 16px;
     border: 1px solid #D0D5DD;
     background: #F2F4F7;
+    span{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
 }
 
 .child1 .copybtn{
@@ -143,7 +168,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    gap: 20px;
+    img{
+        height: 20px;
+        width: 20px;
+    }
 }
 
 .bottom_child2 a{

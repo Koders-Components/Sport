@@ -6,13 +6,15 @@
     justify-content: space-between;
 }
 
-.containerhead svg{
-    font-size: 2em;
+.containerhead .logoname .sportnav svg{
+    font-size: 14px;
 }
 
 .containerhead .logo{
-    flex-wrap: wrap;
-    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 .containerhead p{
     margin: 0;
@@ -20,7 +22,6 @@
 .containerhead .logoname {
     display: flex; /* Makes it a flex container */
     flex-direction: row; /* Horizontal layout (default) */
-    justify-content: center; /* Horizontally centers the child items */
     align-items: center; /* Vertically centers the child items */
     padding: 10px; /* Adds spacing inside the container */
 }
@@ -30,6 +31,7 @@
     font-weight: bolder;
     font-size: large;
 }
+
 .containerhead .mmenu{
     display: flex;
     flex-direction: row;
@@ -38,12 +40,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-}
-
-.containerhead .menubtn{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+    align-items: center;
 }
 
 .containerhead .menu .head{
@@ -73,4 +70,49 @@
     background-color: rgb(26, 190, 26);
     border: 2px solid rgb(26, 190, 26);
     height: 8px;
+}
+
+@media screen and (max-width: 768px) { 
+    .containerhead{
+        flex-direction: column;
+    }
+}
+
+/* Three-line (hamburger) menu button */
+.menu_toggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu_toggle {
+        display: block; /* Visible on small screens */
+    }
+
+    .menubtn{
+        display: none; /* Hide nav links by default */
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        background-color: #FFFFFF; /* Same background as navbar */
+        padding: 10px 0;
+        align-items: flex-start;
+    }
+
+    .menubtn.open {
+        display: flex; /* Show nav links when menu is toggled */
+    }
+
+    .containerhead .mmenu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
