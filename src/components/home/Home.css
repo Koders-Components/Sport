@@ -1,6 +1,7 @@
 .homecont .contfirst{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 .firstcont{
     padding-left: 50px;
@@ -118,12 +119,30 @@
     font-size: 0.7em;
 }
 
+.homecont .secondcont{
+    position: relative;
+    height: 592px;
+}
 .homecont .contdtails{
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(26, 190, 26);;
     font-size: 200px;
     color: transparent;
-    margin-left: 50px;
+    letter-spacing: 40px;
+}
+
+.homecont .scontimg{
+    width: 455px;
+    height: 546px;
+    top: 46px;
+    left: 235px;
+    position: absolute;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
 }
 
 .contsecond{
@@ -134,6 +153,7 @@
 .contsecond .contsecheadadj{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .contsecond .contsechead{
@@ -158,6 +178,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-content: space-around;
 }
 
 .homecont .contbox{
@@ -194,6 +215,7 @@
     padding: 110px 100px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .homecont .contthird .contthirdleft .thirdconthead p{
@@ -309,6 +331,7 @@
 .homecont .conttop{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .homecont .cont_dtl p{
@@ -338,7 +361,6 @@
     text-align: center;
     background-color: white;
     margin-top: 80px;
-    margin-left: 690px;
 }
 
 .homecont .contfive{
@@ -350,6 +372,7 @@
     flex-direction: row;
     gap: 50px;
     margin-bottom: 50px;
+    justify-content: space-around;
 }
 
 .homecont .hovercard{
@@ -431,7 +454,7 @@
     padding: 114px 117px;
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    justify-content: space-between;
 }
 
 .homecont .footerimg{
@@ -499,3 +522,256 @@
     color: rgb(12, 133, 12);
 }
 
+@media screen and (max-width: 1440px) { 
+    .homecont .contfirst,
+    .contsecond,
+    .contthird,
+    .homecont .contfour{
+        padding: 10px;
+    }
+
+    .firstcont .hedings {
+        font-size: 3em;
+    }
+
+    .homecont .contdtails {
+        font-size: 175px;
+    }
+
+    .homecont .scontimg {
+        left: 197px;
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    .homecont .contfirst,
+    .contsecond,
+    .contthird{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .firstcont {
+        padding: 0;
+    }
+
+    .homecont .contthirdright {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width : 991px){
+    .homecont .contboxes {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .homecont .footer {
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .homecont .contdtails {
+        font-size: 130px;
+    }
+
+    .homecont .scontimg {
+        left: 158px;
+        width: 63%;
+        height: auto;
+        top: 46px;
+    }
+
+    .contsecond .contsechead {
+        width: 100%;
+        display: flex;
+    }
+
+    .contsecond .sportdtl {
+        width: 100%;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .homecont .searchbox {
+        width: 100%;
+        padding: 5px;
+        border-radius: 15px;
+        justify-content: space-between;
+    }
+
+    .contsecond .contsechead {
+        font-size: 2em;
+    }
+
+    .homecont .searchbar,
+    .homecont .locationdetail {
+        margin: 0;
+    }  
+    
+    .contsecond .sportdtl {
+        margin-top: 55px;
+        margin-left: 0;
+    }
+
+    .contsecond .contsecheadadj {
+        flex-direction: column;
+    }
+
+    .homecont .footer {
+        padding: 90px 20px 20px 20px;
+    }
+
+    .homecont .footercont,
+    .homecont .headline3 {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .homecont .headline span {
+        font-size: 1em;
+    }
+
+    .homecont .storeadj {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .homecont .download_box{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .homecont .contdtails {
+        font-size: 100px;
+        width: 100%;
+    }
+
+    .homecont .scontimg {
+        left: 129px;
+        width: 63%;
+        top: 0px;
+    }
+
+    .homecont .secondcont {
+        height: 422px;
+    }
+
+    .homecont .contbox {
+        width: 100%;
+    }
+
+    .homecont .cont_dtl1 {
+        font-size: 3em;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .homecont .contdtails {
+        font-size: 70px;
+    }
+
+    .homecont .scontimg {
+        left: 117px;
+        width: 53%;
+    }
+
+    .homecont .secondcont {
+        height: 284px;
+    }
+
+    .firstcont .hedings {
+        font-size: 1.5em;
+    }
+
+    .homecont .contthird .contthirdleft .thirdconthead p {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .homecont .contthirdleft .thirdcont p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .homecont .useradj {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .homecont .contthirdright {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .homecont .thirdcont {
+        width: 100%;
+    }
+
+    .homecont .conttop {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homecont .cont_dtl1 p{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .contfourt_dtl{
+        width: 100%;
+    }
+
+    .homecont .paragraph{
+        width: 100%;
+    }
+
+    .homecont .contsix {
+        padding: 20px;
+    }
+
+    .homecont .hovercards {
+        gap: 2px;
+    }
+
+    .homecont .contfive {
+        padding: 10px 10px;
+    }
+
+    .homecont .hovercard {
+        height: 200px;
+    }
+
+    .homecont .hovercard {
+        margin-top: -110px;
+    }
+}
+
+@media screen and (max-width : 380px){
+    .homecont .contdtails {
+        font-size: 35px;
+    }
+
+    .homecont .scontimg {
+        left: 84px;
+        width: 53%;
+    }
+
+    .homecont .secondcont {
+        height: 207px;
+    }
+}

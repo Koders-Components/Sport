@@ -71,10 +71,16 @@
   }
   
   .slider-container1 .slider-buttons {
-    margin-top: 10px;
+    position: absolute;
+    top: 50%; /* Center the buttons vertically */
+    transform: translateY(-50%);
+    width: 100%; /* Ensure buttons are positioned relative to the container */
+    display: flex;
+    justify-content: space-between; /* Space the buttons apart */
   }
   
-  .slider-container1 .prev-btn, .next-btn {
+  .slider-container1 .prev-btn,
+  .slider-container1 .next-btn {
     background: #007bff;
     color: white;
     border: none;
@@ -84,7 +90,34 @@
     font-size: 1.2rem;
   }
   
-  .slider-container1 .prev-btn:hover, .next-btn:hover {
-    background: #0056b3;
+  .slider-container1 .prev-btn {
+    position: absolute;
+    left: 10px; /* Adjust distance from the left edge */
   }
   
+  .slider-container1 .next-btn {
+    position: absolute;
+    right: 10px; /* Adjust distance from the right edge */
+  }
+  
+  .slider-container1 .prev-btn:hover,
+  .slider-container1 .next-btn:hover {
+    background: #0056b3;
+  }
+
+@media screen and (max-width : 480px){
+  .slider-container1  .slider-details{
+    width: 100%;
+  }
+
+  .slider-container1 .slider-scroll {
+    padding: 20px;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .slider-container1 .slider-img {
+    width: 40px;
+    height: 40px;
+  }
+}

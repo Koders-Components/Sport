@@ -74,6 +74,9 @@ export default function home() {
             <div className='contdtails'>
                 <span> SPORT </span>
             </div>
+            <div className='scontimg'>
+              <img src="/item/img/Sports.png" alt="can't load img" />
+            </div>
           </div>
         </div>
         <div className='contsecond'>
