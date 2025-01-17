@@ -24,8 +24,10 @@
     display: flex;
     flex-direction: row;
     width: 600px;
-    padding: 15px 0 5px 20px;
+    padding: 15px;
     border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .homecont .location{
@@ -38,7 +40,6 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-left: 180px;
 }
 
 .homecont .searchbar svg{
@@ -68,7 +69,6 @@
     border: 2px solid black;
     height: 60px;
     width: 60px;
-    margin-left: 85px;
     border-radius: 10px;
     background-color: black;
 }
@@ -129,13 +129,14 @@
     font-size: 200px;
     color: transparent;
     letter-spacing: 40px;
+    font-family: 'Nico Moji', sans-serif;
 }
 
 .homecont .scontimg{
     width: 455px;
     height: 546px;
     top: 46px;
-    left: 235px;
+    left: 283px;
     position: absolute;
     img{
         height: 100%;
@@ -535,11 +536,12 @@
     }
 
     .homecont .contdtails {
-        font-size: 175px;
+        font-size: 135px;
     }
 
     .homecont .scontimg {
-        left: 197px;
+        left: 195px;
+        width: 58%;
     }
 }
 
@@ -573,6 +575,14 @@
         flex-direction: row;
         gap: 20px;
         flex-wrap: wrap;
+    }
+
+    .homecont .contfive {
+        padding: 10px 10px;
+    }
+
+    .homecont .hovercards {
+        gap: 2px;
     }
 }
 

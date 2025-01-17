@@ -215,7 +215,7 @@ export default function home() {
                     <p>-Best Features</p> 
                 </div>
                 <div className='cont_dtl1'>
-                  <p>key Feature of <span>SportsAstra</span> App</p>
+                  <p>Key Feature of <span>SportsAstra</span> App</p>
                 </div>
             </div>
             <div className='cont_dtlright'>
