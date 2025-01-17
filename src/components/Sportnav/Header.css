@@ -6,15 +6,22 @@
     justify-content: space-between;
 }
 
-.containerhead .logoname .sportnav svg{
+/* .containerhead .logoname .sportnav svg{
     font-size: 14px;
-}
+} */
 
 .containerhead .logo{
     justify-content: center;
     text-align: center;
     display: flex;
     align-items: center;
+    height: 70px;
+    width: 70px;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 .containerhead p{
     margin: 0;
@@ -29,13 +36,13 @@
 .containerhead .lname{
     color: rgb(26, 190, 26);
     font-weight: bolder;
-    font-size: large;
+    font-size: 24px;
 }
 
 .containerhead .mmenu{
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 90px;
     justify-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -44,13 +51,14 @@
 }
 
 .containerhead .menu .head{
-    font-size:14px;
+    font-size:18px;
     font-weight: 500;
-    color: black;
+    line-height: 33.6px;
+    color: #000000;
     text-decoration: none;
 }
 
-.containerhead .menu:hover{
+.containerhead .head:hover{
     text-decoration: underline #279B5A 2px;
     color: #279B5A;
 }
@@ -119,5 +127,6 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        gap: 10px;
     }
 }

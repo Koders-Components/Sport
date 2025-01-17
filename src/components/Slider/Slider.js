@@ -58,7 +58,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="slider-container1">
+    <div className="slider_container1">
       <div className="slider-scroll">
         {data.map((item, index) => (
           <div

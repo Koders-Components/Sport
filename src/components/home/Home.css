@@ -53,6 +53,9 @@
 
 .homecont .locationdtl{
     font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .homecont .locationdtl span{
@@ -61,6 +64,7 @@
 
 .homecont .locationdtl p{
     color: gray;
+    margin: 0;
 }
 
 .homecont .searchbar{
@@ -74,8 +78,8 @@
 }
 
 .homecont .paragraph{
-    width: 450px;
-    font-size:0.8em;
+    width: 506px;
+    font-size: 17px;
     line-height: 30px;
 }
 
@@ -89,11 +93,11 @@
 .homecont .store{
     display: flex;
     flex-direction: row;
-    border: 1px solid;
-    width: 125px;
+    border: 1px solid #A6A6A6;
+    width: 130px;
     background-color: black;
     border-radius: 5px;
-    padding: 2px 0 0 2px;
+    padding: 5px;
     cursor: pointer;
     gap: 5px;
 }
@@ -109,14 +113,16 @@
 }
 
 .homecont .storenam a{
-    font-size: 1.4em;
+    font-size: 1.5em;
     text-decoration: none;
     color: white;
+    font-weight: 600;
 
 }
 
 .homecont .storenam span{
-    font-size: 0.7em;
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .homecont .secondcont{
@@ -165,14 +171,18 @@
     color: #279B5A;
 }
 
-.contsecond .sportdtl{
+.contsecond .sportdtl {
     border-left: 4px solid #279B5A;
-    width: 350px;
+    width: 457px;
     line-height: 20px;
     height: 42px;
     padding-left: 10px;
-    margin-left: 272px;
+    margin-left: 101px;
     margin-top: 55px;
+    p{
+        margin-top: 0;
+        font-size: 20px;
+    }
 }
 
 .homecont .contboxes{
@@ -191,25 +201,30 @@
     height: 60px;
     width: 60px;
     border-radius: 5px;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contbox svg{
-    font-size: 3.8em;
+    font-size: 2.9em;
     background-color: #F3F3F3;
     color: #279B5A;
     border-radius: 5px;
 }
 
-.contbox .boxtype{
+.contbox .boxtype {
     font-weight: 700;
-    font-size: 1.5em;
-    margin-top: 10px;
+    font-size: 22px;
+    margin-top: 30px;
 }
 
-.contbox .boxdtl{
-    font-size: small;
-    color: gray;
+.contbox .boxdtl {
+    font-size: 16px;
+    color: #818181;
     line-height: 30px;
+    font-weight: 400;
 }
 
 .contthird{
@@ -266,7 +281,7 @@
     margin-top: 150px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 50px;
 }
 
 .homecont .appdtl1{
@@ -291,6 +306,11 @@
     border-radius: 15px;
     margin-bottom: 10px;
     border: none;
+    margin-top: 10px;
+}
+
+.homecont .appios{
+    width: 150px;
 }
 
 .homecont .appdtl .appdtl1 .appqr{
@@ -355,8 +375,8 @@
 
 .homecont .cont_dtlright{
     border-radius: 100%;
-    height: 80px;
-    width: 80px;
+    height: 136px;
+    width: 136px;
     align-content: center;
     text-align: center;
     background-color: white;
@@ -376,9 +396,8 @@
 }
 
 .homecont .hovercard{
-    border: 2px solid black;
-    height: 400px;
-    width: 400px;
+    height: 540px;
+    width: 398px;
     margin-top: -200px;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -391,6 +410,7 @@
 .homecont .hovercard img{
     height: 100%;
     width: 100%;
+    border-radius: 15px;
     object-fit: cover;
 }
 /*contsix start from here*/
@@ -418,7 +438,6 @@
 }
 
 .homecont .download_box{
-    border: 1px solid;
     height: 290px;
     border-radius: 15px;
     background-color: #0B7C3C;
@@ -451,7 +470,7 @@
 .homecont .footer{
     background-color: #242424;
     height: auto;
-    padding: 114px 117px;
+    padding: 114px 117px 0 117px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -522,6 +541,18 @@
     color: rgb(12, 133, 12);
 }
 
+.homecont .footerfourth{
+    color: white;
+}
+
+.footerfourth .fourth_info{
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: #D9D9D980;
+}
+
 .homecont .footer hr.hr{
     border: 2px solid #F3F3F3;
     color: white;
@@ -553,6 +584,10 @@
         left: 195px;
         width: 58%;
     }
+
+    .homecont .secondcont {
+        height: 582px;
+    }
 }
 
 @media screen and (max-width: 1200px) { 
@@ -573,6 +608,14 @@
     .homecont .contthirdright {
         margin: 0;
     }
+
+    .homecont .secondcont {
+        height: 573px;
+    }
+
+    .homecont .footer_bottom {
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (max-width : 991px){
@@ -582,8 +625,8 @@
     }
 
     .homecont .footer {
-        flex-direction: row;
-        gap: 20px;
+        flex-direction: column;
+        gap: 0;
         flex-wrap: wrap;
     }
 
@@ -593,6 +636,10 @@
 
     .homecont .hovercards {
         gap: 2px;
+    }
+
+    .homecont .secondcont {
+        height: 573px;
     }
 }
 
@@ -617,6 +664,13 @@
         width: 100%;
         margin-left: 100px;
     }
+    .homecont .secondcont {
+        height: 603px;
+    }
+
+    .homecont .contsixhead1 {
+        font-size: 1.5em;
+   }
 }
 
 @media screen and (max-width : 576px) {
@@ -686,7 +740,7 @@
     }
 
     .homecont .secondcont {
-        height: 422px;
+        height: 466px;
     }
 
     .homecont .contbox {
@@ -696,6 +750,11 @@
     .homecont .cont_dtl1 {
         font-size: 3em;
         width: 100%;
+    }
+
+    .homecont .cont_dtlright {
+        height: 90px;
+        width: 90px;
     }
 }
 
@@ -710,7 +769,7 @@
     }
 
     .homecont .secondcont {
-        height: 284px;
+        height: 313px;
     }
 
     .firstcont .hedings {
@@ -792,6 +851,6 @@
     }
 
     .homecont .secondcont {
-        height: 207px;
+        height: 222px;
     }
 }

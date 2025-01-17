@@ -10,7 +10,7 @@ import { IoWalletSharp } from "react-icons/io5";
 import { Ri24HoursLine } from "react-icons/ri";
 import { BsQrCode } from "react-icons/bs";
 import { BsAndroid2 } from "react-icons/bs";
-import { MdLocationOn } from "react-icons/md";
+// import { MdLocationOn } from "react-icons/md";
 import Slider from '../Slider/Slider';
 
 export default function home() {
@@ -55,7 +55,7 @@ export default function home() {
                       <IoLogoGooglePlaystore/>
                     </div>
                     <div className='storenam'>
-                      <span>get it on</span>
+                      <span>GET IT ON</span>
                       <span><a href='https://play.google.com/store/games?hl=en'>Google Play</a></span>
                     </div>
                   </div>
@@ -64,8 +64,8 @@ export default function home() {
                       <FaApple/>
                     </div>
                     <div className='storenam'>
-                      <span>get it on</span>
-                      <span><a href='https://www.apple.com/in/app-store/'>Google Play</a></span>
+                      <span>Download On The</span>
+                      <span><a href='https://www.apple.com/in/app-store/'>App Store</a></span>
                     </div>
                   </div>
               </div>
@@ -112,7 +112,7 @@ export default function home() {
                 <IoWalletSharp/>
               </div>
               <div className='boxtype'>
-                  <span>Fast Booking</span>
+                  <span>Secure Payments</span>
               </div>
               <div className='boxdtl'>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero consectetur accusamus esse quidem expedita velit ut culpa ratione, consequuntur perspiciatis.</p>
@@ -123,7 +123,7 @@ export default function home() {
                 <Ri24HoursLine/>
               </div>
               <div className='boxtype'>
-                  <span>Fast Booking</span>
+                  <span>24×7 Support</span>
               </div>
               <div className='boxdtl'>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero consectetur accusamus esse quidem expedita velit ut culpa ratione, consequuntur perspiciatis.</p>
@@ -190,10 +190,10 @@ export default function home() {
               <div className='appdtl'>
                 <div className='appdtl1'>
                   <div className='appios'>
-                    <span>For ioS</span>
+                    <span>For Android</span>
                   </div>
                   <div className='appios15'>
-                    <span>ioS +15</span>
+                    <span>Android 9.0+</span>
                   </div>
                   <button type='Submit'> Download App </button>
                   <div className='appqr'>
@@ -219,20 +219,21 @@ export default function home() {
                 </div>
             </div>
             <div className='cont_dtlright'>
-              <MdLocationOn/>
+              {/* <MdLocationOn/> */}
+              <img src="/item/img/Trufslogo.png" alt="" />
             </div>
           </div>
         </div>
         <div className='contfive'>
           <div className='hovercards'>
             <div className='hovercard'>
-                <img src='./item/img/Slider_photo.jpg' alt='First_img'/>
+                <img src='./item/img/Truf1.png' alt='First_img'/>
             </div>
             <div className='hovercard'>
-                <img src='./item/img/Slider_photo.jpg' alt='First_img'/>
+                <img src='./item/img/Truf2.png' alt='First_img'/>
             </div>
             <div className='hovercard'>
-                <img src='./item/img/Slider_photo.jpg' alt='First_img'/>
+                <img src='./item/img/Truf3.png' alt='First_img'/>
             </div>
           </div>
         </div>
@@ -260,7 +261,7 @@ export default function home() {
                       <IoLogoGooglePlaystore/>
                     </div>
                     <div className='storenam'>
-                      <span>get it on</span>
+                      <span>GET IT ON</span>
                       <span><a href='https://play.google.com/store/games?hl=en'>Google Play</a></span>
                     </div>
                   </div>
@@ -269,8 +270,8 @@ export default function home() {
                       <FaApple/>
                     </div>
                     <div className='storenam'>
-                      <span>get it on</span>
-                      <span><a href='https://www.apple.com/in/app-store/'>Google Play</a></span>
+                      <span>Download On The</span>
+                      <span><a href='https://www.apple.com/in/app-store/'>App Store</a></span>
                     </div>
                   </div>
               </div>
@@ -313,11 +314,17 @@ export default function home() {
                 <p>Contact</p>
               </div>
               <div className='footercom1'>
-                <p><a href='tel:01321545646'>0000000000</a></p>
-                <p><a href='mailto:test@gmail.com'>Features@gmail.com</a></p>
+                <p>0000000000</p>
+                <p>Features@gmail.com</p>
                 <p>abhiguleriya@gmail.com</p>
                 <p>Address 1</p>
                 <p>Address 2</p>
+              </div>
+            </div>
+            <div className='footerfourth'>
+              <h6>Get the Latest Information</h6>
+              <div className='fourth_info'>
+
               </div>
             </div>
           </div>  
