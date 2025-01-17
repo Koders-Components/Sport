@@ -51,7 +51,8 @@
 }
 
 .containerhead .menu:hover{
-    text-decoration: underline rgb(26, 190, 26) 2px;
+    text-decoration: underline #279B5A 2px;
+    color: #279B5A;
 }
 .containerhead .btn{
     align-content: center;
@@ -67,12 +68,12 @@
     border-radius: 25px;
     border: none;
     color: white;
-    background-color: rgb(26, 190, 26);
+    background-color: #279B5A;
 }
 
 .containermain .greenline{
-    background-color: rgb(26, 190, 26);
-    border: 2px solid rgb(26, 190, 26);
+    background-color: #279B5A;
+    border: 2px solid #279B5A;
     height: 8px;
 }
 

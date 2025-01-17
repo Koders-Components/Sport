@@ -15,7 +15,7 @@
 }
 
 .firstcont .dtl{
-    color:rgb(26, 190, 26);
+    color: #279B5A;
     margin-left: 200px;
 }
 
@@ -125,7 +125,7 @@
 }
 .homecont .contdtails{
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(26, 190, 26);;
+    -webkit-text-stroke-color: #279B5A;
     font-size: 200px;
     color: transparent;
     letter-spacing: 40px;
@@ -148,7 +148,7 @@
 
 .contsecond{
     padding: 80px 170px;
-    background-color: rgb(248, 244, 244);
+    background-color: #ECECEC;
 }
 
 .contsecond .contsecheadadj{
@@ -162,14 +162,14 @@
 }
 
 .contsecond .contsechead .exchangcolor{
-    color: rgb(26, 190, 26);
+    color: #279B5A;
 }
 
 .contsecond .sportdtl{
-    border-left: 4px solid rgb(26, 190, 26);
+    border-left: 4px solid #279B5A;
     width: 350px;
     line-height: 20px;
-    height: 63px;
+    height: 42px;
     padding-left: 10px;
     margin-left: 272px;
     margin-top: 55px;
@@ -188,7 +188,6 @@
 }
 
 .homecont .boximg{
-    border: 2px solid white;
     height: 60px;
     width: 60px;
     border-radius: 5px;
@@ -196,8 +195,9 @@
 
 .contbox svg{
     font-size: 3.8em;
-    background-color: white;
-    color: rgb(26, 190, 26);
+    background-color: #F3F3F3;
+    color: #279B5A;
+    border-radius: 5px;
 }
 
 .contbox .boxtype{
@@ -225,7 +225,7 @@
 }
 
 .homecont .contthirdleft span{
-    color: rgb(26, 190, 26);
+    color: #279B5A;
 }
 
 .homecont .thirdcont{
@@ -287,7 +287,7 @@
     height: 30px;
     width: 130px;
     color: white;
-    background-color: rgb(26, 190, 26);
+    background: #279B5A;
     border-radius: 15px;
     margin-bottom: 10px;
     border: none;
@@ -296,7 +296,6 @@
 .homecont .appdtl .appdtl1 .appqr{
     height: 100px;
     width: 100px;
-    border: 2px solid black;
 }
 
 .homecont .appdtl .appdtl1 svg{
@@ -332,7 +331,7 @@
 .homecont .conttop{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .homecont .cont_dtl p{
@@ -345,7 +344,7 @@
 }
 
 .homecont .cont_dtl1 span{
-    color: rgb(26, 190, 26);
+    color: #279B5A;
 }
 
 .homecont .cont_dtlright svg{
@@ -415,14 +414,14 @@
 }
 
 .homecont .contsixhead1 span{
-    color: rgb(26, 190, 26);
+    color: #279B5A;
 }
 
 .homecont .download_box{
     border: 1px solid;
     height: 290px;
     border-radius: 15px;
-    background-color: rgb(12, 133, 12);
+    background-color: #0B7C3C;
     color: white;
     justify-items: center;
     margin-bottom: -100px;
@@ -433,6 +432,7 @@
 .homecont .headline{
     font-size: 1em;
     text-align: center;
+    margin-top: 22px;
 }
 
 .homecont .headline span{
@@ -449,12 +449,11 @@
 /* footer start from here */
 
 .homecont .footer{
-    background-color: rgb(17, 16, 16);
-    border: 2px solid black;
+    background-color: #242424;
     height: auto;
     padding: 114px 117px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -521,6 +520,17 @@
 .homecont .footerthired .footercom1 a:hover{
     text-decoration: underline white 2px;
     color: rgb(12, 133, 12);
+}
+
+.homecont .footer hr.hr{
+    border: 2px solid #F3F3F3;
+    color: white;
+}
+
+.homecont .footer_bottom{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media screen and (max-width: 1440px) { 

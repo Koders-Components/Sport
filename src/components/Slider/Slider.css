@@ -35,15 +35,12 @@
   .slider-container1  .slider-img.active-img {
     transform: scale(1.5);
     border: 2px solid rgb(26, 190, 26);
-    box-shadow: 1px 4px 3px 0 lightgray;
   }
   
   .slider-container1  .slider-details {
     text-align: center;
-    background: #f9f9f9;
     width: 800px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .slider-container1 .slider-name {
@@ -81,12 +78,12 @@
   
   .slider-container1 .prev-btn,
   .slider-container1 .next-btn {
-    background: #007bff;
+    background: #279B5A;
     color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50%;
     font-size: 1.2rem;
   }
   
