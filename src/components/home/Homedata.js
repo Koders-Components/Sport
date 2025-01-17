@@ -215,7 +215,7 @@ export default function home() {
                     <p>-Best Features</p> 
                 </div>
                 <div className='cont_dtl1'>
-                  <p>key Feature of <span>SportsAstra</span> App</p>
+                  <p>Key Feature of <span>SportsAstra</span> App</p>
                 </div>
             </div>
             <div className='cont_dtlright'>
@@ -277,47 +277,55 @@ export default function home() {
           </div>
         </div>
         <div className='footer'>
-          <div className='footerfirst'>
-            <div className='footerimmg'>
-              <div className='footerimg'></div>
-              <div className='footerimgnm'>
-                <p>SportAstra</p>
+          <div className='footer_top'>
+            <div className='footerfirst'>
+              <div className='footerimmg'>
+                <div className='footerimg'></div>
+                <div className='footerimgnm'>
+                  <p>SportAstra</p>
+                </div>
+              </div>
+              <div className='footercont'>
+                <p> Subscribe to our email newsletter now and stay informed about the latest updates </p>
+              </div>
+              <div className='footercontimg'>
+                <div className='footerimg'></div>
+                <div className='footerimg'></div>
+                <div className='footerimg'></div>
+                <div className='footerimg'></div>
+                <div className='footerimg'></div>
               </div>
             </div>
-            <div className='footercont'>
-              <p> Subscribe to our email newsletter now and stay informed about the latest updates </p>
+            <div className='footersecond'>
+              <div className='footercom'>
+                <p>Company</p>
+              </div>
+              <div className='footercom1'>
+                <p><a href='/'>Home</a></p>
+                <p><a href='/'>Features</a></p>
+                <p><a href='/'>Reviwes</a></p>
+                <p><a href='/'>About us</a></p>
+                <p><a href='/'>Contect us</a></p>
+              </div>
             </div>
-            <div className='footercontimg'>
-              <div className='footerimg'></div>
-              <div className='footerimg'></div>
-              <div className='footerimg'></div>
-              <div className='footerimg'></div>
-              <div className='footerimg'></div>
+            <div className='footerthired'>
+              <div className='footercom'>
+                <p>Contact</p>
+              </div>
+              <div className='footercom1'>
+                <p><a href='tel:01321545646'>0000000000</a></p>
+                <p><a href='mailto:test@gmail.com'>Features@gmail.com</a></p>
+                <p>abhiguleriya@gmail.com</p>
+                <p>Address 1</p>
+                <p>Address 2</p>
+              </div>
             </div>
-          </div>
-          <div className='footersecond'>
-            <div className='footercom'>
-              <p>Company</p>
-            </div>
-            <div className='footercom1'>
-              <p><a href='/'>Home</a></p>
-              <p><a href='/'>Features</a></p>
-              <p><a href='/'>Reviwes</a></p>
-              <p><a href='/'>About us</a></p>
-              <p><a href='/'>Contect us</a></p>
-            </div>
-          </div>
-          <div className='footerthired'>
-            <div className='footercom'>
-              <p>Contact</p>
-            </div>
-            <div className='footercom1'>
-              <p><a href='tel:01321545646'>0000000000</a></p>
-              <p><a href='mailto:test@gmail.com'>Features@gmail.com</a></p>
-              <p>abhiguleriya@gmail.com</p>
-              <p>Address 1</p>
-              <p>Address 2</p>
-            </div>
+          </div>  
+          <hr className='hr'/>
+          <div className='footer_bottom'>
+            <p>
+            User Terms & Conditions | Privacy Policy
+            </p>
           </div>
         </div>
       </div>
